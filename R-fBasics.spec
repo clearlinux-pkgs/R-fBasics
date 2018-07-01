@@ -4,7 +4,7 @@
 #
 Name     : R-fBasics
 Version  : 3042.89
-Release  : 1
+Release  : 2
 URL      : https://cran.r-project.org/src/contrib/fBasics_3042.89.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/fBasics_3042.89.tar.gz
 Summary  : Rmetrics - Markets and Basic Statistics
@@ -45,11 +45,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1530455656
+export SOURCE_DATE_EPOCH=1530456693
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1530455656
+export SOURCE_DATE_EPOCH=1530456693
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
