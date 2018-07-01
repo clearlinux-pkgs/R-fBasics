@@ -4,7 +4,7 @@
 #
 Name     : R-fBasics
 Version  : 3042.89
-Release  : 2
+Release  : 3
 URL      : https://cran.r-project.org/src/contrib/fBasics_3042.89.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/fBasics_3042.89.tar.gz
 Summary  : Rmetrics - Markets and Basic Statistics
