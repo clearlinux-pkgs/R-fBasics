@@ -4,17 +4,13 @@
 #
 Name     : R-fBasics
 Version  : 3042.89
-Release  : 10
+Release  : 11
 URL      : https://cran.r-project.org/src/contrib/fBasics_3042.89.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/fBasics_3042.89.tar.gz
 Summary  : Rmetrics - Markets and Basic Statistics
 Group    : Development/Tools
 License  : GPL-2.0+
-Requires: R-fBasics-lib
-Requires: R-gss
-Requires: R-stabledist
-Requires: R-timeDate
-Requires: R-timeSeries
+Requires: R-fBasics-lib = %{version}-%{release}
 BuildRequires : R-gss
 BuildRequires : R-stabledist
 BuildRequires : R-timeDate
@@ -45,11 +41,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1535988350
+export SOURCE_DATE_EPOCH=1552836592
 
 %install
+export SOURCE_DATE_EPOCH=1552836592
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1535988350
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -84,8 +80,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library fBasics|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  fBasics || :
 
 
 %files
@@ -113,12 +108,9 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/fBasics/help/paths.rds
 /usr/lib64/R/library/fBasics/html/00Index.html
 /usr/lib64/R/library/fBasics/html/R.css
-/usr/lib64/R/library/fBasics/libs/symbols.rds
+/usr/lib64/R/library/fBasics/tests/doRUnit.R
 /usr/lib64/R/library/fBasics/unitTests/HeavisideSlider.R
 /usr/lib64/R/library/fBasics/unitTests/Makefile
-/usr/lib64/R/library/fBasics/unitTests/report.html
-/usr/lib64/R/library/fBasics/unitTests/report.txt
-/usr/lib64/R/library/fBasics/unitTests/reportSummary.txt
 /usr/lib64/R/library/fBasics/unitTests/runTests.R
 /usr/lib64/R/library/fBasics/unitTests/runit.DistributionFits.R
 /usr/lib64/R/library/fBasics/unitTests/runit.Heaviside.R
