@@ -4,7 +4,7 @@
 #
 Name     : R-fBasics
 Version  : 4021.93
-Release  : 45
+Release  : 46
 URL      : https://cran.r-project.org/src/contrib/fBasics_4021.93.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/fBasics_4021.93.tar.gz
 Summary  : Rmetrics - Markets and Basic Statistics
