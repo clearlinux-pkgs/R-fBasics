@@ -4,7 +4,7 @@
 #
 Name     : R-fBasics
 Version  : 4022.94
-Release  : 47
+Release  : 48
 URL      : https://cran.r-project.org/src/contrib/fBasics_4022.94.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/fBasics_4022.94.tar.gz
 Summary  : Rmetrics - Markets and Basic Statistics
@@ -20,9 +20,6 @@ BuildRequires : R-stabledist
 BuildRequires : R-timeDate
 BuildRequires : R-timeSeries
 BuildRequires : buildreq-R
-# Suppress stripping binaries
-%define __strip /bin/true
-%define debug_package %{nil}
 
 %description
 explore and to investigate basic properties of financial returns 
@@ -49,10 +46,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1677978992
+export SOURCE_DATE_EPOCH=1678818574
 
 %install
-export SOURCE_DATE_EPOCH=1677978992
+export SOURCE_DATE_EPOCH=1678818574
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
