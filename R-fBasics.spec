@@ -7,7 +7,7 @@
 #
 Name     : R-fBasics
 Version  : 4032.96
-Release  : 54
+Release  : 55
 URL      : https://cran.r-project.org/src/contrib/fBasics_4032.96.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/fBasics_4032.96.tar.gz
 Summary  : Rmetrics - Markets and Basic Statistics
